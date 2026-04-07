@@ -74,7 +74,7 @@ public class BankTransactionBeginningBalanceController {
 		
     }
 	
-	@Operation(summary = "Get Bank Account by Dropdown")
+	@Operation(summary = "Get Bank Account by Dropdown List")
 	@GetMapping("/bankTransactionBeginningBalance/{bankAccountId}")
 	public ResponseEntity<JSONResponse<Map<String, Object>>> bankAccountPopup(@PathVariable("bankAccountId") Long bankAccountId) throws Exception {
 		Map<String, Object> bankAccountResponse = bankAccountService.bankAccountDropDown(bankAccountId);
