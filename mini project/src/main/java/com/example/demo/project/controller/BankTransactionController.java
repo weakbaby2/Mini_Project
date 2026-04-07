@@ -67,6 +67,8 @@ public class BankTransactionController {
     	
     	String bankAccountIdFilter = filterParam.get("bankAccountId") == null ? null : String.valueOf(filterParam.get("bankAccountId"));
     	Long bankAccountId = null;
+
+		//checking parameter
     	if(bankAccountIdFilter!=null) bankAccountId = Long.parseLong(bankAccountIdFilter);
    
     	String bankAccountTypeIdFilter = filterParam.get("bankAccountType") == null ? null : String.valueOf(filterParam.get("bankAccountType"));
